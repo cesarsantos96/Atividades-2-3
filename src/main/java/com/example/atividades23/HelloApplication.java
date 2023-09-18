@@ -18,6 +18,27 @@ public class HelloApplication extends Application {
     }
 
     public static void main(String[] args) {
-        launch();
+
+        Animal gato = new Animal("Gato", "Miau");
+        Animal cachorro = new Animal("Cachorro", "Au Au");
+        Animal vaca = new Animal("Vaca", "Muuu");
+
+
+        AnimalDomestico gato1 = new AnimalDomestico("Gato", "Miau", "Zé");
+        AnimalDomestico cachorro1 = new AnimalDomestico("Cachorro"," Au Au", "Paula");
+
+
+
+        System.out.println("Dono do Gato: " + gato1.getDono());
+        gato.emitirSom();
+        System.out.println("Dono do Cachorro: " + cachorro1.getDono());
+        cachorro.emitirSom();
+
+
+        vaca.emitirSom();
+
+
+
+
     }
 }
